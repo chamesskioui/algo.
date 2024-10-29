@@ -1,0 +1,21 @@
+ALGORITHM algorithm_name
+VAR
+    str:STRING;
+    word,vl,snt:INTEGER
+BEGIN
+    word=0;
+    vl=0;
+    snt:=str.length
+    FOR i FROM 0 TO str.length  DO
+    IF (str[i]=" ") THEN
+    word=word+1;   
+    END_IF
+    IF (str[i]="a" or str[i]="e" or str[i]="i" or str[i]="o" or str[i]="u" or str[i]="y") THEN
+        vl:=vl+1;
+    END_IF
+    END_FOR
+    write("the number of word is :" ,word);
+    write("the number of vl is :" , vl);
+    write("the number of snt is " , str.length)
+
+END
